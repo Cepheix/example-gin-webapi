@@ -1,8 +1,9 @@
 package common
 
 import (
-	"github.com/jinzhu/gorm",
 	"fmt"
+
+	"github.com/jinzhu/gorm"
 )
 
 func Init() *gorm.DB {
@@ -12,5 +13,5 @@ func Init() *gorm.DB {
 		fmt.Println("Cannot open database")
 	}
 
-	return db;
+	return db
 }
